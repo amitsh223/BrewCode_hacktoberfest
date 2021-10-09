@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Color.fromRGBO(8, 184, 229, 1),
       nextScreen: Wrapper(),
       splash: "assets/tea.gif",
-      splashTransition: SplashTransition.fadeTransition,
+      splashTransition: SplashTransition.scaleTransition,
       centered: true,
     );
   }

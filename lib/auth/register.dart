@@ -31,7 +31,7 @@ class _RegisterState extends State<Register> {
                 backgroundColor: Colors.brown[400],
                 title: Text('Welcome to brew code'),
                 actions: [
-                  FlatButton.icon(
+                  RaisedButton.icon(
                     onPressed: widget.toggleView,
                     icon: Icon(Icons.person),
                     label: Text('Sign in'),
@@ -83,7 +83,7 @@ class _RegisterState extends State<Register> {
                         SizedBox(
                           height: 20,
                         ),
-                        RaisedButton(
+                        MaterialButton(
                           child: Text('Register'),
                           onPressed: () async {
                             if (_formKey.currentState.validate()) {
@@ -108,7 +108,7 @@ class _RegisterState extends State<Register> {
                         ),
                         Text(
                           error,
-                          style: TextStyle(color: Colors.red, fontSize: 14),
+                          style: TextStyle(color: Colors.red, fontSize: 16),
                         ),
                       ],
                     ),

@@ -90,15 +90,15 @@ class _SettingFormState extends State<SettingForm> {
                   SizedBox(
                     height: 20,
                   ),
-                  RaisedButton(
+                  MaterialButton(
                     color: Colors.pink[400],
                     onPressed: () async {
                       if (_formKey.currentState.validate())
                         await DataBaseService(uid: user.uid).updateUserData(
-                            _currentSugar ?? userData.sugars,
-                            _currentStrength ?? userData.strength,
-                            _currentName ?? userData.name,
-                            );
+                          _currentSugar ?? userData.sugars,
+                          _currentStrength ?? userData.strength,
+                          _currentName ?? userData.name,
+                        );
                       Navigator.pop(context);
                     },
                     child: Text(
