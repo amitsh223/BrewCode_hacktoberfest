@@ -14,7 +14,7 @@ class MobileOtpScreen extends StatefulWidget {
   _MobileOtpScreenState createState() => _MobileOtpScreenState();
 }
 
-class _MobileOtpSc  reenState extends State<MobileOtpScreen> {
+class _MobileOtpScreenState extends State<MobileOtpScreen> {
   AuthService _auth = AuthService();
   bool isCodeSend = false;
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;

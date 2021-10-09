@@ -21,8 +21,8 @@ class _HomeState extends State<Home> {
         builder: (context) {
           return Container(
             padding: EdgeInsets.symmetric(
-              vertical: 20,
-              horizontal: 60,
+              vertical: 25,
+              horizontal: 55,
             ),
             child: SettingForm(),
           );
@@ -42,14 +42,14 @@ class _HomeState extends State<Home> {
           ),
           backgroundColor: Colors.brown[400],
           actions: [
-            FlatButton.icon(
+            RaisedButton.icon(
               onPressed: () async {
                 await _auth.signOut();
               },
               icon: Icon(Icons.person),
               label: Text('Log Out'),
             ),
-            FlatButton.icon(
+            RaisedButton.icon(
               onPressed: () => _showBottomSheet(),
               icon: Icon(Icons.settings),
               label: Text('Setting'),
